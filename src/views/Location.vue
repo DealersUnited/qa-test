@@ -1,5 +1,6 @@
 <template>
-    <router-link :to="{name: 'Home'}" class="back">Back to homepage</router-link>
+    <router-link :to="{name: 'Home'}" class="back">
+        <img src="../assets/back-arrow.svg" alt="Back" class="back__img"> Back to homepage</router-link>
     <div class="city">
       <div class="city__block">
         <div class="city__marker"><img src="../assets/marker.png" alt="marker"></div>
@@ -104,6 +105,12 @@ export default {
   @media all and (max-width: 768px){
     margin-left: 30px;
     margin-top: 30px;
+  }
+  &__img{
+    height: 25px;
+    width: 25px;
+    vertical-align: top;
+    color: #838383;
   }
 }
 .city{

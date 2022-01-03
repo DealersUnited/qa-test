@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <img src="../assets/logo.png" alt="buyerbridge logo">
+    <img src="../assets/weather-logo.png" alt="weather logo" class="header__img">
   </header>
 </template>
 
@@ -29,5 +29,9 @@ export default {
       height: auto;
     }
   }
+}
+.header__img{
+  height: 200px;
+  width: 200px;
 }
 </style>

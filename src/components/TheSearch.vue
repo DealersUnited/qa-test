@@ -1,7 +1,7 @@
 <template>
   <div class="search">
     <div class="search__container">
-      <div class="search__desc">Srch for a location (e.g. London, Paris, Tokyo, etc.)</div>
+      <div class="search__desc">Search for a location (e.g. London, Paris, Tokyo, etc.)</div>
       <input type="text" v-model="city" placeholder="Enter city" class="search__field" @keypress.enter="setCity" @input="error = ''">
       <button class="search__button" @click="setCity" type="button" v-if="!isPending">Add Location</button>
       <button class="search__button" type="button" v-else>Wait...</button>
