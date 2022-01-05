@@ -1,5 +1,6 @@
 <template>
-    <router-link :to="{name: 'Home'}" class="back">Back to homepage</router-link>
+    <router-link :to="{name: 'Home'}" class="back">
+        <img src="../assets/back-arrow.svg" alt="Back" class="back__img"> Back to homepage</router-link>
     <div class="city">
       <div class="city__block">
         <div class="city__marker"><img src="../assets/marker.png" alt="marker"></div>
@@ -18,11 +19,11 @@
               <div class="city__sub">
                 <div class="city__range">
                   <div class="city__type">Min</div>
-                  <div class="city__low">{{currentLocation[0].main.temp_min.toFixed(0)}}&deg;</div>
+                  <div class="city__low">{{currentLocation[0].minTemp.toFixed(0)}}&deg;</div>
                 </div>
                 <div class="city__range">
                   <div class="city__type">Max</div>
-                  <div class="city__low">{{currentLocation[0].main.temp_max.toFixed(0)}}&deg;</div>
+                  <div class="city__low">{{currentLocation[0].maxTemp.toFixed(0)}}&deg;</div>
                 </div>
               </div>
             </div>
@@ -44,11 +45,11 @@
               <div class="city__compactsub">
                 <div class="city__range">
                   <div class="city__type">Min</div>
-                  <div class="city__low">{{city.main.temp_min.toFixed(0)}}&deg;</div>
+                  <div class="city__low">{{city.minTemp.toFixed(0)}}&deg;</div>
                 </div>
                 <div class="city__range">
                   <div class="city__type">Max</div>
-                  <div class="city__low">{{city.main.temp_max.toFixed(0)}}&deg;</div>
+                  <div class="city__low">{{city.maxTemp.toFixed(0)}}&deg;</div>
                 </div>
                 <div class="city__range">
                   <div class="city__type">Humidity</div>
@@ -104,6 +105,12 @@ export default {
   @media all and (max-width: 768px){
     margin-left: 30px;
     margin-top: 30px;
+  }
+  &__img{
+    height: 25px;
+    width: 25px;
+    vertical-align: top;
+    color: #838383;
   }
 }
 .city{

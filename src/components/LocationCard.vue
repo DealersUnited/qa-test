@@ -33,7 +33,7 @@
         </div> 
       </div>
       <div class="card__block tomorrow">
-        <div class="card__desc">Tomorrow's Forcast</div>
+        <div class="card__desc">Tomorrow's Forecast</div>
         <div class="card__container">
           <div class="card__details">
             <div class="card__image">
@@ -50,7 +50,7 @@
               </div>
               <div class="card__range">
                 <div class="card__type">Max</div>
-                <div class="card__low">{{tomorrowMin}}&deg;</div>
+                <div class="card__low">{{tomorrowMax}}&deg;</div>
               </div>
             </div>
           </div>
