@@ -19,11 +19,11 @@
               <div class="city__sub">
                 <div class="city__range">
                   <div class="city__type">Min</div>
-                  <div class="city__low">{{currentLocation[0].main.temp_min.toFixed(0)}}&deg;</div>
+                  <div class="city__low">{{currentLocation[0].minTemp.toFixed(0)}}&deg;</div>
                 </div>
                 <div class="city__range">
                   <div class="city__type">Max</div>
-                  <div class="city__low">{{currentLocation[0].main.temp_max.toFixed(0)}}&deg;</div>
+                  <div class="city__low">{{currentLocation[0].maxTemp.toFixed(0)}}&deg;</div>
                 </div>
               </div>
             </div>
@@ -45,11 +45,11 @@
               <div class="city__compactsub">
                 <div class="city__range">
                   <div class="city__type">Min</div>
-                  <div class="city__low">{{city.main.temp_min.toFixed(0)}}&deg;</div>
+                  <div class="city__low">{{city.minTemp.toFixed(0)}}&deg;</div>
                 </div>
                 <div class="city__range">
                   <div class="city__type">Max</div>
-                  <div class="city__low">{{city.main.temp_max.toFixed(0)}}&deg;</div>
+                  <div class="city__low">{{city.maxTemp.toFixed(0)}}&deg;</div>
                 </div>
                 <div class="city__range">
                   <div class="city__type">Humidity</div>

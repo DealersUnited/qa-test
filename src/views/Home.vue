@@ -9,13 +9,13 @@
       :todayImg="location[0].weather[0].icon"
       :todayDesc="location[0].weather[0].description"
       :todayTemp="location[0].main.temp.toFixed(0)"
-      :todayMin="location[0].main.temp_min.toFixed(0)"
-      :todayMax="location[0].main.temp_max.toFixed(0)"
+      :todayMin="location[0].minTemp.toFixed(0)"
+      :todayMax="location[0].maxTemp.toFixed(0)"
       :tomorrowImg="location[1].weather[0].icon"
       :tomorrowDesc="location[1].weather[0].description"
       :tomorrowTemp="location[1].main.temp.toFixed(0)"
-      :tomorrowMin="location[1].main.temp_min.toFixed(0)"
-      :tomorrowMax="location[1].main.temp_max.toFixed(0)"
+      :tomorrowMin="location[1].minTemp.toFixed(0)"
+      :tomorrowMax="location[1].maxTemp.toFixed(0)"
     ></location-card>
   </div>
 </template>
@@ -36,6 +36,7 @@ export default {
     }
   }
 }
+console.log(LocationCard);
 </script>
 
 <style scoped lang="scss">
